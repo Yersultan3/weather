@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weatherInfoCard"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:elevation="0dp"
+    android:visibility="visible"
+    app:cardBackgroundColor="@color/transparent_white"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/temp"
+    app:strokeColor="@color/white"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/feels_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/feelsTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/feels_like"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/feels_like" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/pressure"
+            app:layout_constraintStart_toEndOf="@id/feels_like"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/windSpeedTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/windspeed"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/wind_speed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sunset"
+            app:layout_constraintStart_toEndOf="@id/sunrise">
+
+            <TextView
+                android:id="@+id/humidityTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/humidity"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/humidity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/sunriseTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/sunrise"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/sunrise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/sunsetTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/sunset"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/sunset" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/pressureTextView"
+                style="@style/weatherDataTextStyle"
+                android:text="@string/pressure"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/weatherInfoTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/pressure" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

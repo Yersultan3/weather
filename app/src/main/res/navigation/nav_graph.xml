@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/selectCityFragment">
+
+    <fragment
+        android:id="@+id/selectCityFragment"
+        android:name="com.example.bankeurasia.ui.SelectCityFragment"
+        android:label="fragment_select_city"
+        tools:layout="@layout/fragment_select_city">
+
+        <action
+            android:id="@+id/actionFragmentSelectCityToFragmentMain"
+            app:destination="@id/mainFragment" />
+        <!--        <action-->
+        <!--            android:id="@+id/action_selectCityFragment_to_addTransactionFragment"-->
+        <!--            app:destination="@id/addTransactionFragment"-->
+        <!--            app:enterAnim="@anim/slide_in_right"-->
+        <!--            app:exitAnim="@anim/slide_out_left"-->
+        <!--            app:popEnterAnim="@anim/slide_in_left"-->
+        <!--            app:popExitAnim="@anim/slide_out_right" />-->
+        <!--        <action-->
+        <!--            android:id="@+id/action_selectCityFragment_to_transactionDetailsFragment"-->
+        <!--            app:destination="@id/transactionDetailsFragment"-->
+        <!--            app:enterAnim="@anim/slide_in_right"-->
+        <!--            app:exitAnim="@anim/slide_out_left"-->
+        <!--            app:popEnterAnim="@anim/slide_in_left"-->
+        <!--            app:popExitAnim="@anim/slide_out_right" />-->
+        <!--        <action-->
+        <!--            android:id="@+id/action_selectCityFragment_to_aboutFragment"-->
+        <!--            app:destination="@id/aboutFragment"-->
+        <!--            app:enterAnim="@anim/slide_in_right"-->
+        <!--            app:exitAnim="@anim/slide_out_left"-->
+        <!--            app:popEnterAnim="@anim/slide_in_left"-->
+        <!--            app:popExitAnim="@anim/slide_out_right" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.bankeurasia.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <argument
+            android:name="argString"
+            app:argType="string"
+            android:defaultValue="fgh"/>
+
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_500">#006AF6</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="background">#f9f9f9</color>
+    <color name="income">#6FCF97</color>
+    <color name="expense">#EB5757</color>
+
+    <color name="orange">#F05323</color>
+    <color name="orange_4">#0AF05323</color>
+    <color name="orange_16">#29F05323</color>
+    <color name="orange_30">#4DF05323</color>
+    <color name="orange_59">#96F05323</color>
+    <color name="orange_82">#D1F05323</color>
+
+    <color name="statusBar">#1D252E</color>
+    <color name="statusBarDark">#1D252E</color>
+    <color name="background_secondary">#F5F7FA</color>
+    <color name="background_secondary_85">#D9F5F7FA</color>
+    <color name="black_4">#0A000000</color>
+    <color name="black_8">#14193048</color>
+    <color name="black_64">#A3193048</color>
+    <color name="black_90">#E62B323B</color>
+    <color name="dark">#A3ACB6</color>
+    <color name="dark_40">#66193048</color>
+    <color name="line">#29193048</color>
+    <color name="black_card">#3C424A</color>
+    <color name="black_button">#3C424A</color>
+    <color name="light_grey">#0D000000</color>
+    <color name="light_grey_dark">#0D000000</color>
+
+    <color name="toolbar_icon">@color/orange</color>
+    <color name="text_blue">@color/blue</color>
+    <color name="icon_blue">@color/blue</color>
+    <color name="icon_blue_on_surface">@color/blue</color>
+
+    <color name="white_grey">#F3F4F6</color>
+    <color name="white_8">#14FFFFFF</color>
+    <color name="white_16">#29FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_64">#A3FFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+
+    <color name="black_const">#193048</color>
+    <color name="dark_40_const">#66193048</color>
+    <color name="blue">#003D7B</color>
+    <color name="blue_light">#00B2FF</color>
+    <color name="background_blue_light_12">#1FC2D6E9</color>
+    <color name="background_blue_light">#C2D6E9</color>
+    <color name="green">#8A9C1B</color>
+    <color name="green_light">#2DBB54</color>
+    <color name="green_success">#00BC13</color>
+    <color name="red">#FC3031</color>
+    <color name="yellow">#FFC455</color>
+    <color name="yellow_market">#FFD65F</color>
+    <color name="yellow_accent_40">#66FFC455</color>
+    <color name="yellow_accent_50">#80FFD65F</color>
+    <color name="yellow_50">#80FF9D46</color>
+    <color name="yellow_market_border">#FFD15C</color>
+    <color name="ripple">#1f000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_v1">#afb0c2</color>
+    <color name="background_dark">#1D252E</color>
+    <color name="background_session_expired">#E63C424A</color>
+    <color name="background_period_picker">#F73C424A</color>
+
+    <color name="product_card_installment">#F54638</color>
+    <color name="product_card_debit">#DE971F</color>
+    <color name="product_card_social">#23ad48</color>
+    <color name="product_card_credit">#f18600</color>
+    <color name="product_card_cyber">#d12625</color>
+    <color name="product_card_travel">#3cb0f4</color>
+    <color name="product_card_kid">#f04e27</color>
+    <color name="light_grey_5">#0D193048</color>
+    <color name="light_grey_10">#2B193048</color>
+    <color name="atf">#0F294C</color>
+    <color name="product_card_debit_digital">#EBA52B</color>
+
+    <color name="gradient_0">#002B323B</color>
+    <color name="gradient_0_white">#00FFFFFF</color>
+
+    <color name="background_success_bottom">#3C424A</color>
+    <color name="background_dialog_color">#F23C424A</color>
+
+    <!--    V3-->
+    <color name="screen_white">#FFFFFF</color>
+    <color name="screen_grey">#F6F6F5</color>
+    <color name="block_white">#FFFFFF</color>
+    <color name="block_grey">#F6F6F5</color>
+    <color name="separator">#33BEBEB6</color>
+    <color name="menu_separator">#99BEBEB6</color>
+    <color name="text">#20201F</color>
+    <color name="brand">#FF4810</color>
+    <color name="light_orange">#FF7348</color>
+    <color name="light_orange_65">#A6FF7348</color>
+    <color name="grey">#AAADB2</color>
+    <color name="green_accent">#9BD050</color>
+    <color name="green_accent_50">#809BD050</color>
+    <color name="red_accent">#FF0000</color>
+    <color name="light_red">#FF7664</color>
+    <color name="orange_with_red">#FFB84E</color>  <!-- TODO change name-->
+    <color name="dark_grey">#898D94</color>
+    <color name="grey_40">#66AAADB2</color>
+    <color name="blue_light_ffd">#FFD6E2ED</color>
+    <color name="blue_light_c1">#C1D9F0</color>
+    <color name="blue_light_99">#99C1D9F0</color>
+    <color name="blue_light_12">#1FC2D6E9</color>
+    <color name="purple">#B590CC</color>
+    <color name="purple_accent">#D1B2EF</color>
+    <color name="purple_accent_10">#1AA57AD4</color>
+    <color name="snackbar_background">#FF7348</color>
+    <color name="snackbar_text_color">#FFFFFF</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="transparent_white">#1AFFFFFF</color>
+</resources>

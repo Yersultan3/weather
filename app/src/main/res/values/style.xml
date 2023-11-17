@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Toolbar.V4" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="titleTextAppearance">@style/Text.V4.18.Medium</item>
+        <item name="titleTextColor">@color/text</item>
+        <item name="titleCentered">true</item>
+    </style>
+
+    <style name="Text.V4.18.Medium" parent="Text.V4.Medium">
+        <item name="android:textSize">@dimen/text_18</item>
+    </style>
+
+    <style name="Text.V4.Medium">
+        <item name="android:fontFamily">@font/jb_sans_medium</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Text.V4">
+        <item name="android:fontFamily">@font/jb_sans_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.17" parent="Text.V3">
+        <item name="android:textSize">@dimen/text_17</item>
+    </style>
+
+    <style name="Text.V3">
+        <item name="android:fontFamily">@font/jusan_regular</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="weatherDataTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="weatherInfoTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="imageButtonStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="layout_constraintVertical_bias">0.1</item>
+    </style>
+</resources>
