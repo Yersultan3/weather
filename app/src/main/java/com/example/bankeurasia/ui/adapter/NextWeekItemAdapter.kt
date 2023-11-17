@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bankeurasia.databinding.ItemNextWeekInfoBinding
-import com.example.bankeurasia.model.WeatherList
+import com.example.bankeurasia.model.WeatherModel
 import com.example.bankeurasia.utils.load
 import com.example.bankeurasia.utils.url
 import com.example.bankeurasia.utils.urlSize
@@ -15,7 +15,7 @@ import java.util.Locale
 
 
 class NextWeekItemAdapter :
-    ListAdapter<WeatherList, NextWeekItemAdapter.NextWeekItemViewHolder>(NextWeekItemMainDiff()) {
+    ListAdapter<WeatherModel, NextWeekItemAdapter.NextWeekItemViewHolder>(NextWeekItemMainDiff()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NextWeekItemViewHolder {
         return NextWeekItemViewHolder(
@@ -35,9 +35,9 @@ class NextWeekItemAdapter :
         private val binding: ItemNextWeekInfoBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        private var item: WeatherList? = null
+        private var item: WeatherModel? = null
 
-        fun bind(item: WeatherList) {
+        fun bind(item: WeatherModel) {
             this.item = item
             binding.iconTemp.load(url + item.weather.firstOrNull()?.icon + urlSize)
             binding.tvNameDay.text = getDayOfWeek(item.dtTxt)
@@ -61,12 +61,12 @@ class NextWeekItemAdapter :
 
 }
 
-class NextWeekItemMainDiff : DiffUtil.ItemCallback<WeatherList>() {
-    override fun areItemsTheSame(oldItem: WeatherList, newItem: WeatherList): Boolean {
+class NextWeekItemMainDiff : DiffUtil.ItemCallback<WeatherModel>() {
+    override fun areItemsTheSame(oldItem: WeatherModel, newItem: WeatherModel): Boolean {
         return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItem: WeatherList, newItem: WeatherList): Boolean {
+    override fun areContentsTheSame(oldItem: WeatherModel, newItem: WeatherModel): Boolean {
         return oldItem.main == newItem.main
     }
 }

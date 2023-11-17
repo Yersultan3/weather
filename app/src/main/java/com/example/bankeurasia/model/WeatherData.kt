@@ -8,6 +8,6 @@ data class WeatherData(
     val city: City,
     val cnt: Int,
     val cod: String,
-    val list: List<WeatherList>,
+    val list: List<WeatherModel>,
     val message: Int
 ): Parcelable

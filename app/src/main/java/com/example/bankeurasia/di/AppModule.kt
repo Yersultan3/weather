@@ -2,7 +2,6 @@ package com.example.bankeurasia.di
 
 import com.example.bankeurasia.data.WeatherApiService
 import com.example.bankeurasia.repository.WeatherRepository
-import com.example.bankeurasia.viewmodel.WeatherViewModel
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -38,11 +37,4 @@ object AppModule {
     fun provideWeatherRepository(apiService: WeatherApiService): WeatherRepository {
         return WeatherRepository(apiService)
     }
-
-//    @Provides
-//    @Singleton
-//    fun provideWeatherViewModel(repository: WeatherRepository): WeatherViewModel {
-//        return WeatherViewModel(repository)
-//    }
-
 }

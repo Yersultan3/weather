@@ -6,14 +6,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bankeurasia.databinding.ItemWeatherInfoBinding
-import com.example.bankeurasia.model.WeatherList
+import com.example.bankeurasia.model.WeatherModel
 import com.example.bankeurasia.utils.load
 import com.example.bankeurasia.utils.url
 import com.example.bankeurasia.utils.urlSize
 
 
 class MainItemAdapter :
-    ListAdapter<WeatherList, MainItemAdapter.MainItemViewHolder>(ItemMainDiff()) {
+    ListAdapter<WeatherModel, MainItemAdapter.MainItemViewHolder>(ItemMainDiff()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainItemViewHolder {
         return MainItemViewHolder(
@@ -33,9 +33,9 @@ class MainItemAdapter :
         private val binding: ItemWeatherInfoBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        private var item: WeatherList? = null
+        private var item: WeatherModel? = null
 
-        fun bind(item: WeatherList) {
+        fun bind(item: WeatherModel) {
             this.item = item
             binding.iconTemp.load(url + item.weather.firstOrNull()?.icon + urlSize)
             binding.tvTemp.text = item.main.temp.toString()
@@ -47,12 +47,12 @@ class MainItemAdapter :
 
 }
 
-class ItemMainDiff : DiffUtil.ItemCallback<WeatherList>() {
-    override fun areItemsTheSame(oldItem: WeatherList, newItem: WeatherList): Boolean {
+class ItemMainDiff : DiffUtil.ItemCallback<WeatherModel>() {
+    override fun areItemsTheSame(oldItem: WeatherModel, newItem: WeatherModel): Boolean {
         return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItem: WeatherList, newItem: WeatherList): Boolean {
+    override fun areContentsTheSame(oldItem: WeatherModel, newItem: WeatherModel): Boolean {
         return oldItem.main == newItem.main
     }
 }
