@@ -1,4 +1,4 @@
 # weather
-Kulakhmetov Yersultan
+1.Kulakhmetov Yersultan
 Просто нужно скачать и установить
 Можно посмотреть детальную прогноз погоды города также на неделю
